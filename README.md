@@ -1,4 +1,3 @@
-oc-theme-pc-repair
-==================
+# oc-theme-pc-repair
 
-Pc-Repair (http://www.pc-repair.it) Theme for OctoberCMS
+> Pc-Repair.it di Dott. Enrico Ciliberti (http://www.pc-repair.it) Theme for OctoberCMS.
