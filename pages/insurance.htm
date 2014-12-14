@@ -14,7 +14,7 @@ crumb_disabled = "0"
 [data_management_fax dm_fax]
 [data_management_insurance dm_insurance]
 [data_management_phone dm_phone]
-[seldac]
+[pcrepair]
 ==
 <div class="container mrg-b-30px">
 	<div class="page-header text-center">
@@ -59,18 +59,18 @@ crumb_disabled = "0"
 							<div class="col-md-6 col-xs-12">
 								<address>
 									<abbr class="mrg-r-10px" title="{{ 'Indirizzo'|_ }}"><i class="fa fa-building fa-fw"></i></abbr>
-									{{ seldac.settings.mc_address_street_name }} n. {{ seldac.settings.mc_address_street_number }} int. {{ seldac.settings.mc_address_street_int }}<br/>
+									{{ pcrepair.settings.mc_address_street_name }} n. {{ pcrepair.settings.mc_address_street_number }} int. {{ pcrepair.settings.mc_address_street_int }}<br/>
 									<abbr class="mrg-r-10px" title="{{ 'Città'|_ }}"><i class="fa fa-location-arrow fa-fw"></i></abbr>
-									{{ seldac.settings.mc_address_zip }} {{ seldac.settings.mc_address_city }}
-									({{ seldac.settings.mc_address_province }}) - {{ seldac.settings.mc_address_country }}
+									{{ pcrepair.settings.mc_address_zip }} {{ pcrepair.settings.mc_address_city }}
+									({{ pcrepair.settings.mc_address_province }}) - {{ pcrepair.settings.mc_address_country }}
 								</address>
 								<address>
 									<abbr class="mrg-r-10px" title="{{ dm_abbr.publishedKey.nin.acronym }}"><i class="fa fa-qrcode fa-fw"></i></abbr>
-									{{ seldac.settings.mc_nin }}<br/>
+									{{ pcrepair.settings.mc_nin }}<br/>
 									<abbr class="mrg-r-10px" title="{{ dm_abbr.publishedKey.vat.acronym|_ }}"><i class="fa fa-barcode fa-fw"></i></abbr>
-									{{ seldac.settings.mc_vat }}<br/>
+									{{ pcrepair.settings.mc_vat }}<br/>
 									{{ ':rui registration: Section :section - Number :number of :date'|_(
-										{ rui: dm_abbr.publishedHtml.rui, section: seldac.settings.rui_section, number: seldac.settings.rui_number, date: seldac.settings.rui_date }) }}
+										{ rui: dm_abbr.publishedHtml.rui, section: pcrepair.settings.rui_section, number: pcrepair.settings.rui_number, date: pcrepair.settings.rui_date }) }}
 								</address>
 								<address><abbr class="mrg-r-10px" title="{{ 'Fax'|_ }}"><i class="fa fa-print fa-fw"></i></abbr>{{ dm_fax.principal.number }}</address>
 							</div>
